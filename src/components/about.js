@@ -17,10 +17,10 @@ export default () => (
       }
     `}
         render={data => (
-            <header>
+            <div className="c-about">
                 <h2>{data.nodePage.title}</h2>
-                <p dangerouslySetInnerHTML={{__html: data.nodePage.body.processed}} />
-            </header>
+                <span dangerouslySetInnerHTML={{__html: data.nodePage.body.processed}} />
+            </div>
         )}
     />
 )

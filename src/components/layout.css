@@ -198,7 +198,6 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -617,4 +616,114 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+/* ###################### */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Merriweather Light'), local('Merriweather-Light'),
+  url('../fonts/merriweather-v19-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/merriweather-v19-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Merriweather Italic';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Merriweather Light Italic'), local('Merriweather-LightItalic'),
+  url('../fonts/merriweather-v19-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/merriweather-v19-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Inter UI Black'), local('InterUI-Black'),
+  url('../fonts/Inter-Black.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/Inter-Black.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ###################### */
+
+:root {
+  --gap: 15px;
+  --color-brand-primary: #096073;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-brand-primary)
+}
+
+h1, h2, h3 {
+  font-family: "Inter UI", sans-serif;
+  font-weight: 900;
+}
+
+.c-main {
+  display: grid;
+  grid-gap: var(--gap);
+}
+
+.c-patterns__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--gap);
+}
+
+.c-patterns__pattern {
+  border: 1px solid;
+  padding: var(--gap);
+}
+
+.c-details__flyout {
+  position: absolute;
+}
+
+.u-visually-hidden {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c-header h1 {
+  min-height: 6.25rem;
+  line-height: 6rem;
+}
+
+@media only screen and (min-width: 960px) {
+
+  .c-main {
+    grid-template-columns: [sidebar-start] 2fr [sidebar-end] 3fr [content-end];
+    grid-template-rows: [main-start] 1fr 1fr [main-end];
+  }
+
+  .c-intro,
+  .c-specifics,
+  .c-about {
+    grid-column: sidebar-start / sidebar-end;
+  }
+
+  .c-patterns,
+  .c-demo-app {
+    grid-column: sidebar-end / content-end;
+  }
+
+  .c-patterns {
+    grid-row: main-start / main-end;
+  }
+}
+
+.o-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 var(--gap);
 }

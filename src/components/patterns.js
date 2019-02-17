@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
-import Layout from "../pages";
+import PatternDetails from "./pattern-details";
 
 export default () => (
   <StaticQuery
@@ -38,39 +38,42 @@ export default () => (
       }
     `}
     render={data => (
-      <div>
-        <h2>Patterns</h2>
-        {data.allNodePattern.edges.map(({ node }) => (
-          <div>
-            <h3>{node.title}</h3>
-            <div dangerouslySetInnerHTML={{ __html: node.body.value }} />
-
-            <p>
-              {(() => {
-                if (node.field_vuejs) {
-                  return (
-                    <details>
-                      <summary>Vue</summary>
-                        <ul>
-                        {node.field_vuejs_links.map(( link ) => (
-                            <li><a href={ link.uri }>{ link.title }</a></li>
-                        ))}
-                        </ul>
-                    </details>
-                  );
-                }
-                if (node.field_react) {
-                  return <details>Vue: {node.field_react.toString()}</details>;
-                }
-                if (node.field_angular) {
-                  return (
-                    <details>Vue: {node.field_angular.toString()}</details>
-                  );
-                }
-              })()}
-            </p>
-          </div>
-        ))}
+      <div className="c-patterns">
+        <h2 className="u-visually-hidden">Patterns</h2>
+        <div className="c-patterns__wrapper">
+          {data.allNodePattern.edges.map(({ node }) => (
+            <div className="c-patterns__pattern" key={node.id}>
+              <h3>{node.title}</h3>
+              <div dangerouslySetInnerHTML={{ __html: node.body.value }} />
+                {(() => {
+                  if (node.field_vuejs) {
+                    return (
+                      <PatternDetails
+                        label="Vue"
+                        links={node.field_vuejs_links}
+                      />
+                    );
+                  }
+                  if (node.field_react) {
+                    return (
+                      <PatternDetails
+                        label="React"
+                        links={node.field_react_links}
+                      />
+                    );
+                  }
+                  if (node.field_angular) {
+                    return (
+                      <PatternDetails
+                        label="Angular"
+                        links={node.field_angular_links}
+                      />
+                    );
+                  }
+                })()}
+            </div>
+          ))}
+        </div>
         <Link to="/patterns/">Show all patterns & techniques</Link>
       </div>
     )}
