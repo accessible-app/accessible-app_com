@@ -656,7 +656,7 @@ pre tt:after {
 }
 
 a {
-  color: var(--color-brand-primary)
+  color: var(--color-brand-primary);
 }
 
 h1, h2, h3 {
@@ -676,7 +676,7 @@ h1, h2, h3 {
 }
 
 .c-patterns__pattern {
-  border: 1px solid;
+  border: 1px solid var(--color-brand-primary);
   padding: var(--gap);
 }
 
