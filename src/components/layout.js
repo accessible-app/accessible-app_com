@@ -18,13 +18,11 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="o-wrapper">
-          <main role="main" className="c-main">
-            {children}
-          </main>
-          <footer role="contentinfo">© {new Date().getFullYear()}</footer>
-        </div>
+        <Header />
+        <main role="main" className="c-main">
+          {children}
+        </main>
+        <footer role="contentinfo">© {new Date().getFullYear()}</footer>
       </>
     )}
   />

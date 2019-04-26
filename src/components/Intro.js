@@ -1,26 +1,46 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby";
+import Arrow from "./arrow";
 
 export default () => (
-    <StaticQuery
-        query={graphql`
-      query singlePageIntro {
-        nodePage(drupal_internal__nid: { eq: 4 }) {
-          title
-          body {
-            value
-            format
-            processed
-            summary
+  <StaticQuery
+    query={graphql`
+      query generalIntroQuery {
+        markdownRemark(frontmatter: { type: { eq: "intro" } }) {
+          frontmatter {
+            intro
           }
         }
       }
     `}
-        render={data => (
-            <div className="c-intro">
-                <h2>{data.nodePage.title}</h2>
-                <div dangerouslySetInnerHTML={{__html: data.nodePage.body.processed}} />
-            </div>
-        )}
-    />
-)
+    render={data => (
+      <div className="c-intro">
+        <p className="c-intro__text">{data.markdownRemark.frontmatter.intro}</p>
+
+        <ul className="o-blanklist">
+          <li>
+            <Link to="/patterns/" className="o-buttonstyle">
+              See all patterns <Arrow />
+            </Link>
+          </li>
+          <li>
+            <a
+              href="https://vuejs.accessible-app.com"
+              className="o-buttonstyle"
+            >
+              Visit the demo app <Arrow />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/accessible-app"
+              className="o-buttonstyle"
+            >
+              Contribute <Arrow />
+            </a>
+          </li>
+        </ul>
+      </div>
+    )}
+  />
+);

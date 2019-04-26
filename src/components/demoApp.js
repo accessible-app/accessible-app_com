@@ -1,14 +1,31 @@
 import React from "react";
 import Image from "./image";
-import {Link} from "gatsby";
+import { graphql, Link, StaticQuery } from "gatsby";
 
-const DemoApp = () => (
-    <div className="c-demo-app">
-        Demo App
-    <Image/>
-        <Link to="/about-the-demo-app/">Read the brief</Link>
-
-    </div>
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query singleTeaserDemoApp {
+        markdownRemark(frontmatter: { type: { eq: "demoapp" } }) {
+          html
+          frontmatter {
+            title
+          }
+        }
+      }
+    `}
+    render={data => (
+      <div className="c-demoapp">
+        <div>
+          <h2>{data.markdownRemark.frontmatter.title}</h2>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: data.markdownRemark.html
+            }}
+          />
+        </div>
+        <Image/>
+      </div>
+    )}
+  />
 );
-
-export default DemoApp;

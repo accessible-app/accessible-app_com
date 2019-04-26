@@ -1,27 +1,21 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-const PatternDetails = ({ label, links }) => (
-  <details className="c-details">
-    <summary>{label}</summary>
-    <ul className="c-details__flyout">
-      {links.map(link => (
-        <li key={link.uri}>
-          <a href={link.uri}>{link.title}</a>
-        </li>
-      ))}
-    </ul>
-  </details>
+const PatternDetails = ({label, link}) => (
+    <>
+        {(() => {
+            if (link) {
+                return <a href={link}>{label}</a>;
+            } else {
+                return <span>{label}</span>;
+            }
+        })()}
+    </>
 );
 
 PatternDetails.propTypes = {
-  label: PropTypes.string,
-  links: PropTypes.array
-};
-
-PatternDetails.defaultProps = {
-  label: ``,
-  links: null
+    label: PropTypes.string,
+    link: PropTypes.array
 };
 
 export default PatternDetails;

@@ -14,11 +14,14 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-drupal`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        baseUrl: `http://a11yapp.drupal`,
+        name: `markdown-pages`,
+        path: `${__dirname}/content`,
       },
     },
+
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

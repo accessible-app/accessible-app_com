@@ -1,37 +1,18 @@
 import React from "react";
 import Layout from "../components/layout";
+import Patterns from "../components/patterns";
+import Stage from "../components/stage";
 
-const PatternsPage = ({data}) => (
+const PatternsPage = () => (
   <Layout>
-    <div>
+      <Stage>
+          Test
+      </Stage>
+      <div>
       <h1>Different types of patterns</h1>
-      {data.allNodePattern.edges.map(({ node }) => (
-        <div>
-          <h3>{node.title}</h3>
-          <div dangerouslySetInnerHTML={{ __html: node.body.value }} />
-        </div>
-      ))}
+        <Patterns mode="page" />
     </div>
   </Layout>
 );
 
 export default PatternsPage;
-
-export const query = graphql`
-  query allNodePattern {
-    allNodePattern {
-      edges {
-        node {
-          id
-          title
-          body {
-            value
-            format
-            processed
-            summary
-          }
-        }
-      }
-    }
-  }
-`;

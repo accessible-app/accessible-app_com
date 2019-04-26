@@ -1,26 +1,27 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby";
 
 export default () => (
-    <StaticQuery
-        query={graphql`
+  <StaticQuery
+    query={graphql`
       query singlePageAbout {
-        nodePage(drupal_internal__nid: { eq: 6 }) {
-          title
-          body {
-            value
-            format
-            processed
-            summary
+        markdownRemark(frontmatter: { type: { eq: "about" } }) {
+          html
+          frontmatter {
+            title
           }
         }
       }
     `}
-        render={data => (
-            <div className="c-about">
-                <h2>{data.nodePage.title}</h2>
-                <span dangerouslySetInnerHTML={{__html: data.nodePage.body.processed}} />
-            </div>
-        )}
-    />
-)
+    render={data => (
+      <div className="c-about">
+        <h2>{data.markdownRemark.frontmatter.title}</h2>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: data.markdownRemark.html
+          }}
+        />
+      </div>
+    )}
+  />
+);

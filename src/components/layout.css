@@ -6,26 +6,7 @@ html {
 body {
   margin: 0;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
+
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -41,10 +22,6 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
-a:active,
-a:hover {
-  outline-width: 0;
-}
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -59,7 +36,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2.135em;
   margin: 0.67em 0;
 }
 mark {
@@ -183,7 +160,6 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -198,6 +174,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
+  font-size: 15px;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -217,118 +194,7 @@ img {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-h1 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
-  line-height: 1.1;
-}
-h2 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
-  line-height: 1.1;
-}
-h3 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
-  line-height: 1.1;
-}
-h4 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 1rem;
-  line-height: 1.1;
-}
-h5 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 0.85028rem;
-  line-height: 1.1;
-}
-h6 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 0.78405rem;
-  line-height: 1.1;
-}
-hgroup {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
+
 ul {
   margin-left: 1.45rem;
   margin-right: 0;
@@ -505,9 +371,7 @@ dt {
 th {
   font-weight: bold;
 }
-li {
-  margin-bottom: calc(1.45rem / 2);
-}
+
 ol li {
   padding-left: 0;
 }
@@ -527,7 +391,7 @@ li > ul {
 blockquote *:last-child {
   margin-bottom: 0;
 }
-li *:last-child {
+ul:not(.o-blanklist) li *:last-child {
   margin-bottom: 0;
 }
 p *:last-child {
@@ -620,36 +484,50 @@ pre tt:after {
 
 /* ###################### */
 @font-face {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: normal;
   font-weight: 300;
-  src: local('Merriweather Light'), local('Merriweather-Light'),
-  url('../fonts/merriweather-v19-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../fonts/merriweather-v19-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Merriweather Light"), local("Merriweather-Light"),
+    url("../fonts/merriweather-v19-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/merriweather-v19-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
-  font-family: 'Merriweather Italic';
+  font-family: "Merriweather Italic";
   font-style: italic;
   font-weight: 300;
-  src: local('Merriweather Light Italic'), local('Merriweather-LightItalic'),
-  url('../fonts/merriweather-v19-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../fonts/merriweather-v19-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Merriweather Light Italic"), local("Merriweather-LightItalic"),
+    url("../fonts/merriweather-v19-latin-300italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/merriweather-v19-latin-300italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
-  font-family: 'Inter UI';
+  font-family: "Work Sans SemiBold";
   font-style: normal;
   font-weight: 900;
-  src: local('Inter UI Black'), local('InterUI-Black'),
-  url('../fonts/Inter-Black.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../fonts/Inter-Black.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Work Sans SemiBold"), local("Work Sans SemiBold"),
+    url("../fonts/work-sans-v4-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/work-sans-v4-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Work Sans ExtraBold";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Work Sans ExtraBold"), local("Work Sans ExtraBold"),
+    url("../fonts/work-sans-v4-latin-800.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/work-sans-v4-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* ###################### */
 
 :root {
   --gap: 15px;
-  --color-brand-primary: #096073;
+  --vgap: 20px;
+  --color-brand-primary: #357b97;
   font-family: "Merriweather", Georgia, serif;
   font-size: 1rem;
   line-height: 1.5;
@@ -659,14 +537,12 @@ a {
   color: var(--color-brand-primary);
 }
 
-h1, h2, h3 {
-  font-family: "Inter UI", sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Work Sans ExtraBold", sans-serif;
   font-weight: 900;
-}
-
-.c-main {
-  display: grid;
-  grid-gap: var(--gap);
+  margin-top: 0;
 }
 
 .c-patterns__wrapper {
@@ -675,13 +551,112 @@ h1, h2, h3 {
   grid-gap: var(--gap);
 }
 
-.c-patterns__pattern {
-  border: 1px solid var(--color-brand-primary);
-  padding: var(--gap);
+.c-patterns__pattern[data-mode="home"] {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-.c-details__flyout {
+.c-patterns__pattern[data-mode="home"] .inner {
+  padding: var(--vgap) var(--gap);
+}
+
+.c-patterns__pattern[data-mode="home"] p {
+  margin-bottom: 0;
+}
+
+.c-patterns__pattern[data-mode="home"] h3 {
+  font-size: 21px;
+  line-height: 1;
+}
+
+.c-patterns-details {
+  display: flex;
+  width: 100%;
+  margin: -10px 0 0 0;
+  list-style: none;
+  border-radius: 0 7px 7px;
+  overflow: hidden;
+}
+
+.c-patterns-details__item {
+  padding: 0;
+  color: #747474;
+  flex: 1;
+  text-align: center;
+  min-height: 40px;
+  line-height: 40px;
+  font-family: "Work Sans SemiBold", sans-serif;
+}
+
+.c-patterns-details__item a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color-brand-primary);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  transition: background-color .25s;
+}
+
+.c-patterns-details__item a:focus,
+.c-patterns-details__item a:hover {
+  background-color: #2c5263;
+}
+
+.o-interferer {
+  background: #357B97;
+  border: 1px solid #FFFFFF;
+  font-family: "Work Sans SemiBold", sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+  display: inline-block;
   position: absolute;
+  bottom: -9px;
+  right: 25%;
+  padding: 2px 4px;
+  text-transform: lowercase;
+  text-decoration: none;
+  transform: rotate(-3deg);
+  transition: background-color .25s;
+}
+
+.o-interferer:focus,
+.o-interferer:hover {
+  background-color: #2c5263;
+}
+
+.o-buttonstyle {
+  border: 2px solid #FFFFFF;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  padding: calc(var(--gap) / 2 ) var(--vgap);
+  display: inline-block;
+  margin-bottom: calc(var(--gap) / 2 );
+  min-width: 250px;
+  font-family: "Work Sans SemiBold", sans-serif;
+  transition: background-color .25s;
+}
+
+.o-buttonstyle:hover,
+.o-buttonstyle:focus {
+  background-color: rgba(0,0,0,.25);
+  outline: none;
+}
+
+.o-blanklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.o-arrow {
+  margin-left: calc(var(--gap) / 3 );
 }
 
 .u-visually-hidden {
@@ -694,36 +669,163 @@ h1, h2, h3 {
   width: 1px;
 }
 
+.c-header {
+  background-color: #357b97;
+  background-color: var(--color-brand-primary);
+  color: #fff;
+  padding: calc(var(--vgap) * 1.25) 0;
+}
+
+.c-stage {
+  background-color: #357b97;
+  background-image: linear-gradient(
+    180deg,
+    var(--color-brand-primary) 0%,
+    #2c5263 100%
+  );
+}
+
+.c-intro {
+  color: #fff;
+}
+
+.c-intro__text {
+  margin-bottom: calc(var(--vgap) * 1.25);
+}
+
+.c-nav-main__list {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  font-family: "Work Sans SemiBold", sans-serif;
+}
+
+.c-nav-main a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Work Sans SemiBold", sans-serif;
+  transition: background-color .25s;
+  padding: 6px 9px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+
+.c-nav-main a:focus {
+  border-color: rgba(0,0,0,.25);
+  outline: none;
+}
+
+.c-nav-main a[aria-current="page"] .u-linkhelper {
+  text-decoration: none;
+  text-shadow:
+          -.07em -.07em var(--color-brand-primary),
+          -.07em .07em var(--color-brand-primary),
+          .07em -.07em var(--color-brand-primary),
+          .07em .07em var(--color-brand-primary);
+  background-size: 1px 1em;
+  box-shadow:
+          inset 0 0 #fff,
+          inset 0 -2px currentcolor;
+  display: inline;
+}
+
 .c-header h1 {
-  min-height: 6.25rem;
-  line-height: 6rem;
+  margin: 0;
+  line-height: 1.0625;
+}
+
+.u-nowrap {
+  white-space: nowrap;
+}
+
+.c-nav-main {
+  display: flex;
 }
 
 @media only screen and (min-width: 960px) {
-
-  .c-main {
-    grid-template-columns: [sidebar-start] 2fr [sidebar-end] 3fr [content-end];
-    grid-template-rows: [main-start] 1fr 1fr [main-end];
+  :root {
+    --gap: 30px;
+    --vgap: 35px;
   }
 
-  .c-intro,
-  .c-specifics,
-  .c-about {
+  .c-nav-main {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .c-nav-main a {
+    margin-left: var(--gap);
+  }
+
+  .c-header__inner,
+  .c-stage__inner {
+    display: grid;
+    grid-template-columns: [sidebar-start] 4fr [sidebar-end] 8fr [content-end];
+    grid-gap: var(--gap);
+  }
+
+  .c-intro {
     grid-column: sidebar-start / sidebar-end;
   }
 
-  .c-patterns,
-  .c-demo-app {
-    grid-column: sidebar-end / content-end;
+  .c-patterns {
+    grid-column: sidebar-end / main-end;
   }
 
-  .c-patterns {
-    grid-row: main-start / main-end;
+  .c-patterns__wrapper {
+    margin-bottom: -40px;
+  }
+
+  .c-homecontent.o-wrapper  {
+    margin-top: calc(3 * var(--vgap));
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    grid-gap: calc(2 * var(--gap));
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .c-demoapp {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-gap: calc(2 * var(--gap));
+    grid-template-columns: 1fr 1fr;
   }
 }
 
+.c-homecontent h2 {
+  color: var(--color-brand-primary);
+  font-size: 25px;
+  margin-bottom: .75em;
+}
+
+.c-homecontent a {
+  font-weight: 800;
+  text-decoration: none;
+  text-shadow:
+          -.07em -.07em #fff,
+          -.07em .07em #fff,
+          .07em -.07em #fff,
+          .07em .07em #fff;
+  background-size: 1px 1em;
+  box-shadow:
+          inset 0 0 var(--color-brand-primary),
+          inset 0 -1px currentcolor;
+  display: inline;
+}
+
+.c-homecontent p:last-of-type {
+  margin-bottom: 0;
+}
+
+
 .o-wrapper {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 var(--gap);
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 calc(var(--gap) * 1.33);
+}
+
+.o-wrapper--smaller {
+  max-width: 945px;
 }
