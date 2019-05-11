@@ -36,7 +36,7 @@ export default props => (
             <div
               className="c-patterns__pattern"
               data-mode={props.mode}
-              key={node.id}
+              key={node.frontmatter.title}
             >
               <div className="inner">
                 <h3>{node.frontmatter.title}</h3>
@@ -56,7 +56,9 @@ export default props => (
                   />
                 </li>
               </ul>
-                <a href="#" className="o-interferer">Contribute!</a>
+              <Link to="/contribute/" className="o-interferer">
+                Contribute!
+              </Link>
             </div>
           ))}
         </div>

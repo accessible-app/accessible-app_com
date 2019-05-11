@@ -15,7 +15,7 @@ export default () => (
       }
     `}
     render={data => (
-      <div className="c-specifics">
+      <div className="c-specifics c-homecontent__item">
         <h2>{data.markdownRemark.frontmatter.teaser_title}</h2>
         <p
           dangerouslySetInnerHTML={{

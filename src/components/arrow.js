@@ -17,9 +17,8 @@ const Arrow = () => (
         fill="#FFFFFF"
         fill-rule="nonzero"
       >
-        <g id="link-copy" transform="translate(338.000000, 468.000000)">
+        <g transform="translate(338.000000, 468.000000)">
           <polygon
-            id="Path"
             points="3.946 8.945 7.146 5.745 0 5.745 0 4.255 7.146 4.255 3.946 1.055 5 0 10 5 5 9.999"
           />
         </g>

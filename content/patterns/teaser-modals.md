@@ -1,7 +1,7 @@
 ---
 title: "(Modal) dialog windows"
 type: "pattern_teaser"
-vue: "/patterns/vue/modal-dialogs"
+vue: "/pattern/vue/modal-dialogs"
 react: false
 angular: false
 path: '/vue-pattern-modal'

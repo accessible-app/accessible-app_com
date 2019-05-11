@@ -15,7 +15,7 @@ export default () => (
       }
     `}
     render={data => (
-      <div className="c-demoapp">
+      <div className="c-demoapp c-homecontent__item">
         <div>
           <h2>{data.markdownRemark.frontmatter.title}</h2>
           <div

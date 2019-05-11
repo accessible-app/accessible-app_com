@@ -17,7 +17,7 @@ export default () => (
       <div className="c-intro">
         <p className="c-intro__text">{data.markdownRemark.frontmatter.intro}</p>
 
-        <ul className="o-blanklist">
+        <ul className="o-blanklist c-buttongroup">
           <li>
             <Link to="/patterns/" className="o-buttonstyle">
               See all patterns <Arrow />
@@ -32,12 +32,9 @@ export default () => (
             </a>
           </li>
           <li>
-            <a
-              href="https://github.com/accessible-app"
-              className="o-buttonstyle"
-            >
+            <Link to="/contribute/" className="o-buttonstyle">
               Contribute <Arrow />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

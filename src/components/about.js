@@ -14,7 +14,7 @@ export default () => (
       }
     `}
     render={data => (
-      <div className="c-about">
+      <div className="c-about c-homecontent__item">
         <h2>{data.markdownRemark.frontmatter.title}</h2>
         <div
           dangerouslySetInnerHTML={{

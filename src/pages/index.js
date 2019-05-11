@@ -13,7 +13,7 @@ import BodyClassName from "react-body-classname";
 const IndexPage = () => (
   <BodyClassName className="page--home">
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Welcome" />
       <Stage>
         <Intro />
         <Patterns mode="home" />

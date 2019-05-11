@@ -1,7 +1,7 @@
 ---
 title: "Notifications for all users"
 type: "pattern_teaser"
-vue: "/patterns/vue/accessible-notifications"
+vue: "/pattern/vue/notifications"
 react: false
 angular: false
 path: '/vue-pattern-notification'

@@ -5,17 +5,12 @@ const PatternDetails = ({label, link}) => (
     <>
         {(() => {
             if (link) {
-                return <a href={link}>{label}</a>;
+                return <a className="c-patterns-details__link" href={link}>{label}</a>;
             } else {
                 return <span>{label}</span>;
             }
         })()}
     </>
 );
-
-PatternDetails.propTypes = {
-    label: PropTypes.string,
-    link: PropTypes.array
-};
 
 export default PatternDetails;
