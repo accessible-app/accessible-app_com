@@ -725,6 +725,18 @@ h3 {
   font-family: "Merriweather Italic", Georgia, serif;
 }
 
+.c-footer__legal a {
+  color: inherit;
+  text-decoration: none;
+  text-shadow: -0.07em -0.07em var(--color-brand-secondary),
+    -0.07em 0.07em var(--color-brand-secondary),
+    0.07em -0.07em var(--color-brand-secondary),
+    0.07em 0.07em var(--color-brand-secondary);
+  background-size: 1px 1em;
+  box-shadow: inset 0 0 #fff, inset 0 -1px currentcolor;
+  display: inline;
+}
+
 .c-footer__meta a {
   color: inherit;
   text-decoration: none;

@@ -44,15 +44,24 @@ const Layout = ({ children }) => (
                 A project by <a href="https://marcus.io/">marcus</a>
               </li>
             </ul>
-            <p className="c-footer__legal">
-              <small>
-                © {new Date().getFullYear()}
-                <br />
-                Legal stuff: Inhaltlich Verantwortlicher gemäß § 10 Absatz 3
-                MDStV: Marcus Herrmann, c/o Office D118, Danziger Str. 118,
-                10405 Berlin, accessible-app [at] marcus-herrmann [dot] com.
-              </small>
-            </p>
+            <div className="c-footer__legal">
+              <p>
+                <small>
+                  Legal stuff: Inhaltlich Verantwortlicher gemäß § 10 Absatz 3
+                  MDStV: Marcus Herrmann, c/o Office D118, Danziger Str. 118,
+                  10405 Berlin, accessible-app [at] marcus-herrmann [dot] com.
+                </small>
+              </p>
+              <p>
+                <small>
+                  Colophon: built with <a href="https://gatsbyjs.org">Gatsby</a>{" "}
+                  (see{" "}
+                  <a href="https://github.com/accessible-app/accessible-app_com">
+                    source
+                  </a>) and hosted on <a href="https://netlify.com"> Netlify</a>
+                </small>
+              </p>
+            </div>
           </div>
         </footer>
       </>
