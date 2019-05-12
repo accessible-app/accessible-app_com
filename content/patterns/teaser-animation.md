@@ -1,7 +1,7 @@
 ---
-title: "Responsibe animation"
-type: "pattern_teaser"
-vue: "/pattern/vue/responsible-animation"
+title: Responsibe animation
+type: pattern_teaser
+vue: /pattern/vue/responsible-animation
 react: false
 angular: false
 ---

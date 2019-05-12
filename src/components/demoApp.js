@@ -24,7 +24,7 @@ export default () => (
             }}
           />
         </div>
-        <Image/>
+        <Image />
       </div>
     )}
   />

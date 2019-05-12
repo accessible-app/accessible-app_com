@@ -31,9 +31,7 @@ const Header = () => (
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/a11y-challenges-of-webapps/"
-                >
+                <Link to="/a11y-challenges-of-webapps/">
                   <span className="u-linkhelper">Challenges</span>
                 </Link>
               </li>

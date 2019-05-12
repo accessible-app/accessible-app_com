@@ -4,6 +4,7 @@ title: Why visual announcements alone aren't enough
 type: pattern
 edittext: https://github.com/accessible-app/accessible-app_com/edit/master/content/patterns/vue/notifications.md
 ---
+
 In a purely visual context notifying your web app's users of changes is more or less a no-brainer. They click a button and usually see something appearing, changing or animating: a modal window is opened, a counter badge is updated or a to do list item disappears. And even if the change is much more abstract you can solve this with a specialized notification system like [humane.js](http://wavded.github.io/humane-js/) or [toastr](https://codeseven.github.io/toastr/demo.html). Just throw a new "toast notification" (as they are sometimes called),
 
 For users consuming your web app in a non-visual way the topic of announcements becomes harder. Let's take a screen reader for example - its normal mode is to read the document from top to bottom (in reality no user uses it this way, but navigates via headline structure, landmarks, links, controls and the like). Given a screen reader user interacts with a button and, as a consequence, something happens in a web app, and this something is either obvious for visual users or accompanied with a notification. The problem is - without a real accessible notification system in place said user has to actively search for what has changed on website.

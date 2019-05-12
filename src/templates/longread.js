@@ -8,8 +8,7 @@ import SEO from "../components/seo";
 class LongreadPageTemplate extends Component {
   render() {
     const pattern = this.props.data.markdownRemark;
-    return (
-      <Layout>
+    return <Layout>
         <SEO title={pattern.frontmatter.title} />
         <div className="c-singlepage">
           <div className="o-wrapper o-wrapper--smaller">
@@ -18,8 +17,7 @@ class LongreadPageTemplate extends Component {
             <EditText link={pattern.frontmatter.editurl} />
           </div>
         </div>
-      </Layout>
-    );
+      </Layout>;
   }
 }
 

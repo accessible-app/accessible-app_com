@@ -4,6 +4,7 @@ title: "(Modal) dialog windows"
 type: "pattern"
 edittext: https://github.com/accessible-app/accessible-app_com/edit/master/content/patterns/vue/modals.md
 ---
+
 ### Dialogs vs Modals
 
 A dialog box is a piece of UI that asks or requests the user for a response. This process of asking for the users' attention is non-obstrusive, they could ignore the request altogether. [As Brian Dys puts it](https://www.quora.com/Whats-the-difference-between-a-modal-and-dialog):

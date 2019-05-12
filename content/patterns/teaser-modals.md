@@ -1,7 +1,7 @@
 ---
-title: "(Modal) dialog windows"
-type: "pattern_teaser"
-vue: "/pattern/vue/modal-dialogs"
+title: (Modal) dialog windows
+type: pattern_teaser
+vue: /pattern/vue/modal-dialogs
 react: false
 angular: false
 ---
