@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Accessible App`,
-    description: ``,
+    description: `Learn how to build inclusive web applications and Single Page Apps in modern JavaScript frameworks. This project collects strategies, links, patterns and plugins for React, Vue and Angular.`,
     author: `@_marcusherrmann`,
+    image: `/images/a11yfav.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
