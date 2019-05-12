@@ -13,7 +13,7 @@ import BodyClassName from "react-body-classname";
 const IndexPage = () => (
   <BodyClassName className="page--home">
     <Layout>
-      <SEO title="Welcome" />
+      <SEO title="Welcome to Acccessible App" />
       <Stage>
         <Intro />
         <Patterns mode="home" />
