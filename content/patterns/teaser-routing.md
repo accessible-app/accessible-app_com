@@ -4,7 +4,6 @@ type: "pattern_teaser"
 vue: "/pattern/vue/routing"
 react: false
 angular: false
-path: '/vue-pattern-routing'
 
 ---
 

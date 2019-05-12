@@ -4,7 +4,6 @@ type: "pattern_teaser"
 vue: "/pattern/vue/notifications"
 react: false
 angular: false
-path: '/vue-pattern-notification'
 
 ---
 
