@@ -1,7 +1,7 @@
 import React from "react";
 
 import Layout from "../components/layout";
-import Intro from "../components/intro";
+import Intro from "../components/Intro";
 import Challenges from "../components/challenges";
 import About from "../components/about";
 import Patterns from "../components/patterns";
