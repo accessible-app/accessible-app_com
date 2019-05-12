@@ -26,7 +26,14 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
-
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '7',
+        matomoUrl: 'https://stat.marcus-herrmann.com',
+        siteUrl: 'https://accessible-app.com'
+      }
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
