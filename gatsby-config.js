@@ -33,7 +33,9 @@ module.exports = {
       options: {
         siteId: '7',
         matomoUrl: 'https://stat.marcus-herrmann.com',
-        siteUrl: 'https://accessible-app.com'
+        siteUrl: 'https://accessible-app.com',
+        disableCookies: true,
+        
       }
     },
     `gatsby-transformer-remark`,
