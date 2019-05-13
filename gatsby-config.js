@@ -4,7 +4,7 @@ module.exports = {
     description: `Learn how to build inclusive web applications and Single Page Apps in modern JavaScript frameworks. This project collects strategies, links, patterns and plugins for React, Vue and Angular.`,
     author: `@_marcusherrmann`,
     url: 'http://accessible-app.com',
-    image: `/images/a11yappscreenshot.png`
+    image: `/images/a11yappscreenshot_larger.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,7 +35,7 @@ module.exports = {
         matomoUrl: 'https://stat.marcus-herrmann.com',
         siteUrl: 'https://accessible-app.com',
         disableCookies: true,
-        
+
       }
     },
     `gatsby-transformer-remark`,
