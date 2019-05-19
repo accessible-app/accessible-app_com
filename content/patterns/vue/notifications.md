@@ -34,7 +34,7 @@ sighted users
         document.getElementById('info').textContent = 'Product was added successfully to your shopping cart';
         });
 
-4. Then, when a product gets added this is not only visually perceivable but also will be announced by screen readers. Usually, and using `aria-live="polite"`, the announcement will wait until the screen reader has finished its current output. In the rare cases you need to report a critical error and cannot wait (read: cannot be polite), use `aria-live="assertive"`. As soon as your live regions' content changes (from empty to not empty, in this case) it will be announced (if you are, like me, not a native English speaker and use the word "assertive" rarely in your everyday live - just look at its
+4. Then, when a product gets added this is not only visually perceivable but also will be announced by screen readers. Usually, and using `aria-live="polite"`, the announcement will wait until the screen reader has finished its current output. In the rare cases you need to report a critical error and cannot wait (read: cannot be polite), use `aria-live="assertive"`. As soon as your live regions' content changes (from empty to not empty, in this case) it will be announced (if you are, like me, not a native English speaker and use the word "assertive" rarely in your everyday life - just look at its
 first three letters; then you know you got the counterpart to "polite"
 😉).
 
