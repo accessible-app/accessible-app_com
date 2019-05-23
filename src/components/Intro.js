@@ -32,9 +32,9 @@ export default () => (
             </a>
           </li>
           <li>
-            <Link to="/contribute/" className="o-buttonstyle">
-              Contribute <Arrow />
-            </Link>
+            <a href="#newsletter" className="o-buttonstyle">
+              Newsletter <Arrow />
+            </a>
           </li>
         </ul>
       </div>
