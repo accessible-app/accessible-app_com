@@ -39,8 +39,8 @@ const Layout = ({ children }) => (
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/_marcusherrmann">
-                    Follow me on twitter for updates
+                  <a href="https://twitter.com/accessible_app">
+                    This project on twitter
                   </a>
                 </li>
                 <li>
