@@ -491,6 +491,7 @@ pre tt:after {
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: local("Merriweather Light"), local("Merriweather-Light"),
     url("../fonts/merriweather-v19-latin-300.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -500,6 +501,7 @@ pre tt:after {
 @font-face {
   font-family: "Merriweather Italic";
   font-weight: 300;
+  font-display: swap;
   src: local("Merriweather LightItalic"), local("Merriweather-LightItalic"),
     url("../fonts/merriweather-v19-latin-300italic.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -510,6 +512,7 @@ pre tt:after {
   font-family: "Work Sans SemiBold";
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
   src: local("Work Sans SemiBold"), local("Work Sans SemiBold"),
     url("../fonts/work-sans-v4-latin-600.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -520,6 +523,7 @@ pre tt:after {
   font-family: "Work Sans ExtraBold";
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
   src: local("Work Sans ExtraBold"), local("Work Sans ExtraBold"),
     url("../fonts/work-sans-v4-latin-800.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
