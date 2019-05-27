@@ -2,7 +2,7 @@
 path: /pattern/vue/routing
 title: An accessible routing pattern
 type: pattern
-edittext: https://github.com/accessible-app/accessible-app_com/master/content/patterns/vue/routing.md
+edittext: https://github.com/accessible-app/accessible-app_com/edit/master/content/patterns/vue/routing.md
 ---
 
 ### Why routing is an issue
