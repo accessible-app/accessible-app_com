@@ -2,7 +2,7 @@
 path: /pattern/vue/responsible-animation
 title: Responsible Animation
 type: pattern
-edittext: https://github.com/accessible-app/accessible-app_com/master/content/patterns/vue/animation.md
+edittext: https://github.com/accessible-app/accessible-app_com/edit/master/content/patterns/vue/animation.md
 ---
 
 To make the user experience pleasant and - above all - more app-like web-app authors use not only the strategy of asynchronous loading data but also animation. While the user experience of your app could benefit from it (see: ["How Functional Animation Helps Improve User Experience"](https://www.everyinteraction.com/articles/functional-animation-helps-improve-user-experience/)) sudden movements could cause, for example, dizziness, vertigo or nausea for some of your users suffering from a motion sensitivity such as [vestibular disorders](https://vestibular.org/understanding-vestibular-disorder):
