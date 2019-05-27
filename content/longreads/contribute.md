@@ -2,7 +2,7 @@
 path: /contribute
 title: Contribute to accessible-app.com
 type: contribute
-editurl: https://github.com/accessible-app/accessible-app_com/edit/master/content/contribute.md
+editurl: hhttps://github.com/accessible-app/accessible-app_com/blob/master/content/longreads/contribute.md
 ---
 
 This project aims to be a resource for inclusive modern JavaScript framework usage - so it needs contribution from people who specialize in accessibility regarding React, Angular and Vue. 
