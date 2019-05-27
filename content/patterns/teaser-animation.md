@@ -1,5 +1,5 @@
 ---
-title: Responsibe animation
+title: Responsible animation
 type: pattern_teaser
 vue: /pattern/vue/responsible-animation
 react: false
