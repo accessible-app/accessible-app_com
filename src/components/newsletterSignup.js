@@ -22,6 +22,7 @@ const newsletterSignup = ({url}) => (
         name="subscribe_email"
         placeholder="email@domain.com"
         defaultValue=""
+        required="required"
         className="c-newsletter-signup__input"
       />
       <input
