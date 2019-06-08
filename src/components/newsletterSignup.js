@@ -13,6 +13,7 @@ const newsletterSignup = ({url}) => (
       className="c-newsletter-signup__form"
       action={url}
       method="post"
+      target="_blank"
     >
       <input
         type="email"

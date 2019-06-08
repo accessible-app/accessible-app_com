@@ -25,7 +25,7 @@ const Layout = ({ children }) => (
         </main>
         <footer role="contentinfo" className="c-footer">
           <div className="o-wrapper c-footer__inner">
-            <NewsletterSignup url="http://aa-mailer.test/newsletter/?list=1#promailer-form"/>
+            <NewsletterSignup url="https://newsletter.accessible-app.com/newsletter/?list=1#promailer-form"/>
             <div className="c-footer__legal">
               <ul className="o-blanklist c-footer__meta">
                 <li>
