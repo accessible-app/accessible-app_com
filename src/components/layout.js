@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
 import "./layout.css";
+import NewsletterSignup from "./newsletterSignup";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -24,27 +25,28 @@ const Layout = ({ children }) => (
         </main>
         <footer role="contentinfo" className="c-footer">
           <div className="o-wrapper c-footer__inner">
-            <ul className="o-blanklist c-footer__meta">
-              <li>
-                <a href="https://marcus.io/privacy-policy#english">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/accessible-app">
-                  This project on GitHub
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/_marcusherrmann">
-                  Follow me on twitter for updates
-                </a>
-              </li>
-              <li>
-                A project by <a href="https://marcus.io/">marcus</a>
-              </li>
-            </ul>
+            <NewsletterSignup url="https://newsletter.accessible-app.com/newsletter/?list=1#promailer-form"/>
             <div className="c-footer__legal">
+              <ul className="o-blanklist c-footer__meta">
+                <li>
+                  <a href="https://marcus.io/privacy-policy#english">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/accessible-app">
+                    This project on GitHub
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/accessible_app">
+                    This project on twitter
+                  </a>
+                </li>
+                <li>
+                  A project by <a href="https://marcus.io/">marcus</a>
+                </li>
+              </ul>
               <p>
                 <small>
                   Legal stuff: Inhaltlich Verantwortlicher gemäß § 10 Absatz 3

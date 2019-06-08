@@ -656,6 +656,12 @@ h3 {
   min-width: 250px;
   font-family: "Work Sans SemiBold", sans-serif;
   transition: background-color 0.25s;
+  -webkit-appearance: none;
+  background: none;
+}
+
+.o-buttonstyle--smaller {
+  min-width: 125px;
 }
 
 .o-buttonstyle--onwhite {
@@ -957,6 +963,35 @@ h3 {
 .c-singlepage h4 {
   text-transform: uppercase;
 }
+
+.c-newsletter-signup__input {
+  padding-left: 7px;
+  padding-right: 7px;
+  line-height: 32px;
+}
+
+.c-newsletter-signup__input:focus {
+  opacity: .8;
+  outline: none;
+}
+
+.c-newsletter-signup__text {
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+/*.c-newsletter-signup {*/
+/*  background-color: #357b97;*/
+/*  background-image: linear-gradient(*/
+/*          180deg,*/
+/*          var(--color-brand-primary) 0%,*/
+/*          var(--color-brand-secondary) 100%*/
+/*  );*/
+/*  color: #fff;*/
+/*  display: grid;*/
+/*  grid-template-columns: 1fr 1fr;*/
+/*  grid-gap: var(--gap);*/
+/*}*/
 
 @media only screen and (min-width: 620px) {
   :root {
