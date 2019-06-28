@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import Patterns from "../components/patterns";
+import Patterns from "../components/patterns-all";
 import SEO from "../components/seo";
 
 const PatternsPage = () => (

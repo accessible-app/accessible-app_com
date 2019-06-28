@@ -5,10 +5,9 @@ import PatternDetails from "./pattern-details";
 export default props => (
   <StaticQuery
     query={graphql`
-      query all4PatternTeasers {
+      query allPatternTeasers {
         allMarkdownRemark(
           filter: { frontmatter: { type: { eq: "pattern_teaser" } } }
-          limit: 4
           sort: { fields: [frontmatter___order], order: DESC }
         ) {
           edges {
