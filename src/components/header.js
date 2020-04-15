@@ -41,6 +41,11 @@ const Header = () => (
                 </Link>
               </li>
               <li>
+                <Link to="/people/">
+                  <span className="u-linkhelper">People & Projects</span>
+                </Link>
+              </li>
+              <li>
                 <Link to="/contribute/">
                   <span className="u-linkhelper">Contribute</span>
                 </Link>
