@@ -48,6 +48,7 @@ I started this list originally [in my blog](https://marcus.io/blog/web-app-a11y-
 * [Suzanne Aitchison](https://mobile.twitter.com/s_aitchison) runs [upyoura11y](https://www.upyoura11y.com/) (I love a good pun!) where she offers <q>tutorials and resources for developers seeking to build accessible web experiences</q>. Currently it has a focus on React. I think it is a good complement to the current (involuntary) focus on Vue.js on [accessible-app.com](https://accessible-app.com)!
 
 ### [Updates/Changelog]
+* 2020-05-18: Added ChakraUI Vue
 * 2020-04-15: Moved this list over to acessible-app.com, fixed typos
 * 2019-01-17:
     * Added designsystem.gov.au / React
