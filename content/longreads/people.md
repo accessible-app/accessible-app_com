@@ -25,6 +25,7 @@ I started this list originally [in my blog](https://marcus.io/blog/web-app-a11y-
 * [Oscar Braunert](https://twitter.com/_ovlb) gives [great talks](https://talks.ovl.design/) and starts great projects regarding accessibility in Vue (on of them is [tournant UI](https://ui.tournant.dev))
 * [Austin Gil](https://twitter.com/Stegosource) built [vuetensils](https://github.com/Stegosource/vuetensils), a helper component library with accessibility in mind.
 * [VueVixens](https://www.vuevixens.org/) offer a half day workshop called "Build an Accessible Memory Game". Anyone interested could read all of its structure and contents, and find all necessary code on a [dedicated page](https://workshops.vuevixens.org/workshop/half-day/half-day1.html#what-you-ll-build).
+* [Chakra UI released a Vue.js version in May 2020](https://github.com/chakra-ui/chakra-ui-vue).
 
 ### Angular
 
