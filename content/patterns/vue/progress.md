@@ -86,6 +86,6 @@ If you look into the relevant component, [`Orders.vue`](https://github.com/acces
 - <a href="https://github.com/accessible-app/vuejs/blob/master/src/views/Orders.vue">Source code of the "Orders" view</a>
 
 ### Summary
-- Use a progress bar with all necessary attributes (`role="progressbar" for JAWS`, `aria-valuenow`, `aria-valuemin`, `aria-valuemax`)
+- Use a progress bar with all necessary attributes (`role="progressbar"` for JAWS, `aria-valuenow`, `aria-valuemin`, `aria-valuemax`)
 - Make the progressbar programmatically focusable with `tabindex="-1"`
 - Create a focus management strategy that makes sense in your particular app. Ensure focus will be set to the progressbar, and make sure focus is not lost after successful loading (or whatever you created the interstitial view for).
