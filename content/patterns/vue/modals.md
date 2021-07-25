@@ -87,7 +87,7 @@ This means that you can "ship" a yet-to-be-selected dialog component in any othe
     	<!-- <fancy-dialog-thingy /> will be rendered here! -->
     </portal-target>
 
-The second part of the best practice is to choose a component for the (modal) dialog itself. Luckily accessible scripts like these are around, and one of them is Hugo Giraudel's `[a11y-dialog](https://github.com/edenspiekermann/a11y-dialog)`. Beside a [React variant of this script](https://github.com/HugoGiraudel/react-a11y-dialog) there is also a Vue wrapper called [vue-a11y-dialog](https://github.com/morkro/vue-a11y-dialog). You can use this script as it is since its build with the best practices (mentioned above) in mind - but be sure to to set the `disable-native` property to `true`, since it otherwise renders a native dialog element ([and this is not suitable to use in production as Scott O'Hara explains here](https://www.scottohara.me/blog/2019/03/05/open-dialog.html)).
+The second part of the best practice is to choose a component for the (modal) dialog itself. Luckily accessible scripts like these are around, and one of them is Kitty Giraudel's `[a11y-dialog](https://github.com/edenspiekermann/a11y-dialog)`. Beside a [React variant of this script](https://github.com/HugoGiraudel/react-a11y-dialog) there is also a Vue wrapper called [vue-a11y-dialog](https://github.com/morkro/vue-a11y-dialog). You can use this script as it is since its build with the best practices (mentioned above) in mind - but be sure to to set the `disable-native` property to `true`, since it otherwise renders a native dialog element ([and this is not suitable to use in production as Scott O'Hara explains here](https://www.scottohara.me/blog/2019/03/05/open-dialog.html)).
 
 ### Examples
 
